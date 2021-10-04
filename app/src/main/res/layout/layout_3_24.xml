@@ -55,7 +55,8 @@
             app:layout_constraintEnd_toStartOf="@id/guideline2"
             app:layout_constraintTop_toTopOf="parent"
             android:src="@drawable/temp2"
-            app:layout_constraintBottom_toTopOf="@id/view3" />
+            app:layout_constraintBottom_toTopOf="@id/view3"
+            android:contentDescription="@string/image" />
 
         <Button
             android:id="@+id/view3"
@@ -66,16 +67,18 @@
             app:layout_constraintTop_toBottomOf="@id/view2"
             app:layout_constraintBottom_toTopOf="@id/view4"
             app:layout_constraintEnd_toStartOf="@id/guideline2" />
+
         <TextView
             android:id="@+id/view4"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="@string/_4"
-            android:gravity="center_horizontal"
             android:background="#800020"
+            android:gravity="center_horizontal"
+            android:text="@string/_4"
+            android:textColor="#FF80AB"
             app:layout_constraintDimensionRatio="2:1"
-            app:layout_constraintTop_toBottomOf="@id/view3"
-            app:layout_constraintEnd_toStartOf="@id/guideline2" />
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
 
         <TextView
             android:id="@+id/view5"
@@ -109,10 +112,6 @@
             app:layout_constraintEnd_toStartOf="@id/view2"
             app:layout_constraintStart_toEndOf="@id/guideline1"
             app:layout_constraintBottom_toBottomOf="@id/view3"/>
-
-
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
